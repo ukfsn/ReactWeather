@@ -3,12 +3,10 @@ var React = require('react');
 var WeatherForm = React.createClass({
   onLocationSubmit: function (e) {
     e.preventDefault();
-    console.log("I am in onLocationSubmit");
 
     var location = this.refs.location.value;
 
     if ( location.length > 0) {
-      console.log("I have a location which is ", location);
       this.props.onLocationUpdate(location);
       this.refs.location.value = '';
     }
