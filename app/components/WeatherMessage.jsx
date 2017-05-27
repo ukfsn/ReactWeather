@@ -12,10 +12,10 @@ var React = require('react');
 
 var WeatherMessage = ({location, weatherData}) => {
   return (
-    <div>
-      <h3>It is {weatherData.temp} C in {location}</h3>
+    <div className='text-center'>
+      <h3>It is {weatherData.temp} &deg;C in {location}</h3>
       <p>The humidity is {weatherData.humidity}%</p>
-      <p>The maximum recorded temperature so far today in {location} was {weatherData.temp_max} C</p>
+      <p>The maximum recorded temperature so far today in {location} was {weatherData.temp_max} &deg;C</p>
     </div>
   );
 }
